@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 // declaraciones y exportaciones
 import { ContadorModule } from './contador/contador.module';
 import { HeroesModule } from './heroes/heroes.module';
+import { DbzModule } from './dbz/dbz.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HeroesModule } from './heroes/heroes.module';
     BrowserModule,
     HeroesModule,
     // importar aqui
-    ContadorModule
+    ContadorModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]

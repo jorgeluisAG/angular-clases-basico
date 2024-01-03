@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-listado',
-  templateUrl: './listado.component.html'
+  selector: 'app-listados',
+  templateUrl: './listados.component.html'
 })
-export class ListadoComponent{
+export class ListadosComponent{
 
   /*
   constructor() { }
@@ -23,6 +23,6 @@ export class ListadoComponent{
     //this.heroes.splice(0,1)
     //const heroeBorrado = this.heroes.shift();
     //console.log(heroeBorrado);
-    this.heroeBorrado = this.heroes.shift() || ''; 
+    this.heroeBorrado = this.heroes.shift() || '';
   }
 }

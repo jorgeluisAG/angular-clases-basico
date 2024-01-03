@@ -7,19 +7,26 @@
     <dd> {{ nombre }}</dd>
 
     <td> Edad: </td>
-    <dd> {{ edad }}</dd>  
+    <dd> {{ edad }}</dd>
 
     <td> Funcion: </td>
-    <dd> {{ obtenerNombre() }}</dd> 
+    <dd> {{ obtenerNombre() }}</dd>
 
     <td> Capitalizado: </td>
     <!-- Esto lo capitaliza <dd> {{ nombre.toUpperCase() }}</dd> -->
-    <dd> {{ nombreCapitalizado }}</dd> 
+    <dd> {{ nombreCapitalizado }}</dd>
 </dl>
 
-<button (click)="cambiarNombre()">
+<button *ngIf="nombre !== 'Spiderman'"
+  (click)="cambiarNombre()">
     Cambiar Heroe
 </button>
-<button (click)="cambiarEdad()">
+<button *ngIf="edad !== 25"
+  (click)="cambiarEdad()">
     Cambiar Edad
+</button>
+
+<button
+  (click)="resetForm()">
+    Reset
 </button>

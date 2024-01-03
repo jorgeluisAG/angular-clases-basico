@@ -15,7 +15,7 @@ export class HeroeComponent {
 
     // ESTO ES UN METODO
     obtenerNombre(): string {
-        // ESTOS SON LOS BAC TICS ES DECIR COMO CONCATENAR UN STRINGS O SUMAR STRINGS
+        // ESTOS SON LOS     `BAC TICS` ==>  `` <== ES DECIR COMO CONCATENAR UN STRINGS O SUMAR STRINGS
         return ` ${this.nombre} - ${this.edad} `
 
     }
@@ -26,6 +26,11 @@ export class HeroeComponent {
 
     cambiarEdad():void{
         this.edad = 30;
+    }
+
+    resetForm(): void{
+      this.nombre = 'ironman';
+      this.edad = 45;
     }
 }
 
